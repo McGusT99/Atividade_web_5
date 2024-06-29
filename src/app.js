@@ -9,10 +9,10 @@ app.use(express.json());
 app.use('/api', foodRouter);
 
 
-mongoose.connect(`mongodb+srv://userApp:8PbEDhPg9Gzitvjs@atividadeweb.xvohx82.mongodb.net`,{
+mongoose.connect(`mongodb+srv://{Name}:{Password}@atividadeweb.{Endereço}.mongodb.net`,{
   retryWrites: true, 
   w: 'majority', 
-  appName: 'atividadeweb'
+  appName: '{Name}'
 });
 
 
